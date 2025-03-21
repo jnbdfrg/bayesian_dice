@@ -59,16 +59,6 @@ plot_posterior(dice)
 
 ---
 
-## 🧪 Running Tests
-
-Make sure you are in the project root, then run:
-
-```bash
-python -m unittest discover tests
-```
-
----
-
 ## 🧐 Concepts Behind the Package
 
 - **Bayesian Inference**: Updates belief about dice fairness using observed evidence.
