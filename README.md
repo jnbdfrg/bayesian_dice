@@ -11,4 +11,4 @@ A simple Python package for Bayesian inference on dice fairness.
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/bayesian_dice.git
+   git clone https://github.com/jnbdfrg/bayesian_dice.git
