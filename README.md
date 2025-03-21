@@ -92,6 +92,7 @@ plot_posterior(dice)
 
 ## 🔮 Future Ideas
 
+- Bayes Factor calculation (e.g., Savage-Dickey ratio)
 - Sequential randomness tests
 - Application to pseudorandom number analysis (e.g., gambling fairness)
 
@@ -109,6 +110,14 @@ The **Savage-Dickey density ratio** can be used to compute a Bayes Factor betwee
 > "How much more likely is it that the die is biased than fair, given the observed rolls?"
 
 This can provide a principled way to **select between competing models** using Bayesian model comparison.
+
+### 🧠 Interpreting the Result
+
+| Bayes Factor (BF_01) | Interpretation                |
+|----------------------|-------------------------------|
+| > 3                  | Moderate evidence for fairness |
+| ~1                   | Inconclusive                   |
+| < 1                  | Evidence favors bias           |
 
 ---
 
