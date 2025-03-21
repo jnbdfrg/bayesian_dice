@@ -1,6 +1,6 @@
 # 🎲 Bayesian Dice
 
-**Bayesian Dice** is a simple Python package for performing Bayesian inference on the fairness of dice based on observed rolls.
+**Bayesian Dice** is a lightweight Python package for performing Bayesian inference on the fairness of dice based on observed rolls.
 
 ---
 
@@ -92,12 +92,27 @@ plot_posterior(dice)
 
 ## 🔮 Future Ideas
 
-- Bayes Factor calculation (e.g., Savage-Dickey ratio)
 - Sequential randomness tests
 - Application to pseudorandom number analysis (e.g., gambling fairness)
+
+---
+
+## ⚖️ Bayes Factor Support
+
+A future extension of this package includes computing **Bayes Factors** to compare models:
+
+- `H0`: The die is fair (uniform distribution).
+- `H1`: The die is biased (some faces are more likely).
+
+The **Savage-Dickey density ratio** can be used to compute a Bayes Factor between these models. This would let users answer questions like:
+
+> "How much more likely is it that the die is biased than fair, given the observed rolls?"
+
+This can provide a principled way to **select between competing models** using Bayesian model comparison.
 
 ---
 
 ## 📜 License
 
 MIT License — use it, modify it, and share it freely.
+
