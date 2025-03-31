@@ -16,8 +16,7 @@ class BayesianDice:
     def update(self, rolls):
         """Updates beliefs using Bayesian inference."""
         for roll in rolls:
-            self.observations[roll - 1] += 1
-        self.alpha += self.observations
+            self.alpha[roll - 1] += 1
 
     def get_posterior(self):
         """Returns posterior probability for each face."""
@@ -45,7 +44,7 @@ class BayesianDice:
         prior_pdf = beta.pdf(fair_value, a_prior, b_prior)
         post_pdf = beta.pdf(fair_value, a_post, b_post)
 
-        return prior_pdf / post_pdf
+        return post_pdf/prior_pdf
 
     def interpret_bayes_factor(self, side=0):
         """
